@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato e Apoio — FeedForward</title>
+<meta name="description" content="Entre em contato com a FeedForward, seja um voluntário ou faça sua doação. Ajude a levar segurança alimentar para famílias em vulnerabilidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+      <span class="brand-text">
+        <span class="brand-name">FeedForward</span>
+        <span class="brand-slogan">Juntos contra a fome</span>
+      </span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html" class="ativo">Contato e Apoio</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#doar" class="btn btn-dourado">Doe Agora</a>
+      </div>
+    </nav>
+
+    <label for="menu-toggle" class="hamburger-label" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero-simples">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Contato e Apoio</h1>
+        <p>Entre em contato conosco, tire suas dúvidas, seja um voluntário ou faça sua doação.</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?w=700&q=80" alt="Mãos segurando um coração azul">
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO + FORMULÁRIO -->
+  <section id="doar">
+    <div class="container">
+      <div class="grid-contato">
+
+        <!-- coluna esquerda -->
+        <div class="coluna-esquerda">
+          <div class="painel">
+            <h2><i class="fa-solid fa-address-card"></i> Informações de Contato</h2>
+
+            <div class="info-item">
+              <span class="info-icone"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <strong>E-mail</strong>
+                <span>contato@feedforward.org.br</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icone"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <strong>Telefone</strong>
+                <span>(11) 98765-4321</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icone"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <strong>Endereço</strong>
+                <span>Rua Esperança, 123 - Grajaú<br>São Paulo - SP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="coluna-lateral">
+            <div class="painel">
+              <h3><i class="fa-solid fa-share-nodes"></i> Seja nossas redes sociais</h3>
+              <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+
+            <div class="painel">
+              <h3><i class="fa-solid fa-people-group"></i> Seja um Voluntário</h3>
+              <p>Você também pode fazer a diferença! Preencha o formulário e venha fazer parte do nosso time de voluntários.</p>
+              <br>
+              <a href="#formulario" class="btn btn-dourado">Quero ser voluntário</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- coluna direita -->
+        <div class="coluna-direita">
+          <div class="painel" id="formulario">
+            <h2><i class="fa-solid fa-paper-plane"></i> Fale Conosco</h2>
+            <p style="margin-bottom: 22px;">Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+            <form action="#" method="post">
+              <div class="form-grupo">
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+              </div>
+
+              <div class="form-grupo">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+              </div>
+
+              <div class="form-grupo">
+                <label for="assunto">Assunto *</label>
+                <select id="assunto" name="assunto" required>
+                  <option value="" selected disabled>Selecione uma opção</option>
+                  <option value="doacao">Quero doar</option>
+                  <option value="voluntariado">Quero ser voluntário</option>
+                  <option value="parceria">Parceria</option>
+                  <option value="duvida">Dúvida geral</option>
+                </select>
+              </div>
+
+              <div class="form-grupo">
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-dourado"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+            </form>
+          </div>
+
+          <div class="painel" style="margin-top: 24px;">
+            <h3><i class="fa-solid fa-hands-holding-circle"></i> Como Ajudar</h3>
+            <p style="margin-bottom: 14px;">Você pode nos ajudar de várias formas:</p>
+            <ul class="lista-como-ajudar">
+              <li>Doando cestas básicas</li>
+              <li>Fazendo doações em dinheiro</li>
+              <li>Se tornando um voluntário</li>
+              <li>Divulgando nosso trabalho</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER FINAL -->
+  <section>
+    <div class="banner-final">
+      <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1200&q=80" alt="Mãos unidas segurando um coração, simbolizando união e solidariedade">
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        <span class="brand-text">
+          <span class="brand-name">FeedForward</span>
+          <span class="brand-slogan">Juntos contra a fome</span>
+        </span>
+      </div>
+      <div class="footer-social">
+        <h4>Siga nossas redes sociais</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 FeedForward. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
